@@ -1,0 +1,71 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+      {
+        "@id": "ro-crate-metadata.json",
+        "@type": "CreativeWork",
+        "conformsTo": { "@id": "https://w3id.org/ro/crate/1.1" },
+        "about": { "@id": "./" }
+      },
+      {
+        "@id": "./",
+        "@type": "Dataset",
+        "hasPart": [ { "@id": "data/Little-Woolden-Hall-height-data.csv"} ],
+        "name": "EA River Glaze Level Crate",
+        "description": "CSV Timeseries of River Glaze level data at Little Woolden Hall",
+        "datePublished": "2026-02-03T00:00:01+0000",
+        "author": { "@id": "https://orcid.org/0009-0009-5499-2096"},
+        "license": { "@id": "https:/spdx.org/licenses/CC0-1.0"}
+      },
+      {
+        "@id": "data/Little-Woolden-Hall-height-data.csv",
+        "@type": "File",
+        "name": "River Glaze height data",
+        "description": "CSV timeseries of River Glaze height",
+        "encodingFormat": "text/csv",
+        "author": { "@id": "https://ror.org/01zewfb16" },
+        "license": { "@id": "https://spdx.org/licenses/OGL-UK-3.0.html"},
+        "contentLocation": { "@id": "https://sws.geonames.org/2653301/" }
+      },
+      {
+        "@id": "https://spdx.org/licenses/OGL-UK-3.0",
+        "@type": "CreativeWork",
+        "name": "UK Open Government License",
+        "version": 3.0,
+        "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      },
+      {
+        "@id": "https://spdx.org/licenses/CC0-1.0",
+        "@type": "CreativeWork",
+        "name": "CC0-1.0",
+        "version": 1.0,
+        "url": "https://creativecommons.org/publicdomain/zero/1.0"
+      },
+      {
+        "@id": "https://orcid.org/0009-0009-5499-2096",
+        "@type": "Person",
+        "name": "Paul Slavin",
+        "affiliation": "The University of Manchester"
+      },
+      {
+        "@id": "https://ror.org/01zewfb16",
+        "@type": "Organization",
+        "name": "Environment Agency",
+        "url": "https://www.gov.uk/government/organisations/environment-agency"
+      },
+      {
+        "@id": "https://sws.geonames.org/2653301/",
+        "@type": "Place",
+        "description": "The (approximate) location of the data collection site",
+        "geo": { "@id": "4fb5e032-29b8-4777-973a-5b570a86d7a3" },
+        "url": "https://www.geonames.org/2653301/chat-moss.html",
+        "name": "Chat Moss"
+      },
+      {
+        "@id": "4fb5e032-29b8-4777-973a-5b570a86d7a3",
+        "@type": "GeoCoordinates",
+        "latitude": "53.45",
+        "longitude": "-2.45"
+      }
+  ]
+}
